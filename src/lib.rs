@@ -2,11 +2,9 @@ use worker::*;
 
 #[event(fetch)]
 async fn fetch(
-    _req: HttpRequest,
+    _req: Request,
     _env: Env,
     _ctx: Context,
-) -> Result<HttpResponse> {
-    Ok(http::Response::builder()
-        .status(http::StatusCode::OK)
-        .body(Body::empty())?)
+) -> Result<Response> {
+    Response::ok("Hello World for real!")
 }

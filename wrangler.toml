@@ -4,3 +4,7 @@ compatibility_date = "2026-05-14"
 
 [build]
 command = "cargo install -q \"worker-build@^0.8\" && worker-build --release"
+
+[[kv_namespaces]]
+binding = "rust_worker_test"
+id = "0a4561360293431c8e8f5e5f1be42086"
